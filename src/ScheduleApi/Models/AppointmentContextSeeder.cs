@@ -72,7 +72,7 @@ namespace ScheduleApi.Models
                     UserName = "tester"
                 };
 
-                var userResult = await _userManager.CreateAsync(newUser, "Pracamonika1!");
+                var userResult = await _userManager.CreateAsync(newUser, "Password1!");
 
                 // Create administrator role and assign permission to manage accounts
                 var adminRole = await _roleManager.FindByNameAsync("administrator");
